@@ -31,6 +31,22 @@ struct SettingsView: View {
                         }
                         
                     }
+                    GroupBox(
+                        label: SettingsLabelView(labelText: "Application", labelImage: "app.iphone")) {
+                        
+                        
+                        SettingsRowView(name: "Developer", content: "John / Jane")
+                        SettingsRowView(name: "Designer", content: "Robert Petras")
+                        SettingsRowView(name: "Compatibility", content: "IOS 14")
+                        SettingsRowView(name: "Website", linkLabel: "Swift UI MasterClass", linkDestination: "swiftuimasterclass.com")
+                        SettingsRowView(name: "Twitter", linkLabel: "@RobertPetras", linkDestination: "twitter.com/robpetras")
+                        SettingsRowView(name: "Swift UI", content: "2.0")
+                        SettingsRowView(name: "Version", content: "1.1.0")
+                        HStack {
+                            Text( "Developer").foregroundColor(Color.gray)
+                                Spacer()
+                        }
+                    }
                 }
                 .navigationBarTitle(Text("Settings"), displayMode: .large)
                 .navigationBarItems(
