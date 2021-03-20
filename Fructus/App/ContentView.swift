@@ -35,7 +35,9 @@ struct ContentView: View {
                                         SettingsView()
                                     }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
